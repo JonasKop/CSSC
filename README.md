@@ -1,6 +1,6 @@
 # Color
 
-Tool which converts rgb to hex or hex to rgb from its arguments. 
+Tool which converts RGB to HEX or HEX to RGB from its arguments. 
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ Tool which converts rgb to hex or hex to rgb from its arguments.
 To install you just run:
 
 ```
-cd build && ./installer.py --install
+$ cd build && ./installer.py --install
 ```
 
 The default installation location is /usr/local/bin
@@ -24,7 +24,7 @@ The default installation location is /usr/local/bin
 To remove you just run:
 
 ```
-cd build && ./installer.py --uninstall
+$ cd build && ./installer.py --uninstall
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ cd build && ./installer.py --uninstall
 To convert HEX code to RGB you run the following
 
 ```
-color 123FAB
+$ color 123FAB
 ```
 
 which will provide the output
@@ -48,11 +48,11 @@ which will provide the output
 To convert RGB to HEX code you run the following
 
 ```
-18 63 171
+$ color 18 63 171
 ```
 
 which will provide the output
 
 ```
-123FAB
+#123FAB
 ```
