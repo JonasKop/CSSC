@@ -56,3 +56,34 @@ which will provide the output
 ```
 #123FAB
 ```
+
+## Building
+
+To build this project by yourself you can do this. 
+
+### Prerequisites
+
+To build this project by your own you need the following:
+
+* Cabal build system
+* Haskell compiler
+
+### Build
+
+First build the program
+
+```
+$ cabal install
+```
+
+Then replace the executable in build/color with the one in dist/build/color/color
+
+```
+$ cp dist/build/color/color build/color
+```
+
+Then install it with 
+
+```
+$ cd build && ./installer.py --install
+```
