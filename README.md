@@ -1,31 +1,28 @@
-------------------------------------------------------------
-Program: Color
-------------------------------------------------------------
-Author:      Jonas Sjödin
-Email:       jonas@jonassjodin.com
-License:     MIT License
-Date:        January 2019
+# Color
 
-Description: Tool which converts rgb to hex or hex to rgb 
-             from its arguments.
-Language:    Written in Haskell
-------------------------------------------------------------
-REQUIREMENTS
+Tool which converts rgb to hex or hex to rgb from its arguments. 
+
+## Getting Started
+
+### Prerequisites
 
 * Python 3
-* Unix system (For the installer to work), else you will 
-  need to install it manually.
-------------------------------------------------------------
-INSTALLATION
+* Unix system (For the installer to work), else you will need to install it manually.
+
+### Installation
 
 To install you just run:
 
-$ ./installer.py --install
+```
+./installer.py --install
+```
 
 The default installation location is /usr/local/bin
-------------------------------------------------------------
-UNINSTALL
+
+# Uninstallation
 
 To remove you just run:
 
-$ ./installer.py --uninstall
+```
+./installer.py --uninstall
+```
