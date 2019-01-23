@@ -14,15 +14,15 @@ Tool which converts rgb to hex or hex to rgb from its arguments.
 To install you just run:
 
 ```
-./installer.py --install
+cd build && ./installer.py --install
 ```
 
 The default installation location is /usr/local/bin
 
-# Uninstallation
+### Uninstallation
 
 To remove you just run:
 
 ```
-./installer.py --uninstall
+cd build && ./installer.py --uninstall
 ```
