@@ -22,8 +22,8 @@ dest = "/usr/local/bin/color"
 src = "color"
 
 if flag == "--install":
-    subprocess.call(["cp", src, dest])
-    print("Success: Installated the program to " + dest)
+    if subprocess.call(["cp", src, dest]) == 0:
+        print("Success: Installated the program to " + dest)
 elif flag == "--uninstall":
-    subprocess.call(["rm", dest])
-    print("Success: Uninstalled the program")
+    if subprocess.call(["rm", dest]) == 0:
+        print("Success: Uninstalled the program")
