@@ -1,13 +1,15 @@
 # Color
 
-Tool which converts RGB to HEX or HEX to RGB from its arguments. 
+Tool which converts RGB color codes to HEX or HEX color codesto RGB from its arguments. 
 
 ## Getting Started
 
 ### Prerequisites
 
+For the installer to work you will need the following, else you will need to install it manually.
+
 * Python 3
-* Unix system (For the installer to work), else you will need to install it manually.
+* Unix system 
 
 ### Installation
 
