@@ -1,91 +1,45 @@
-# Color
+# CSS Color
 
-Tool which converts RGB color codes to HEX or HEX color codesto RGB from its arguments. 
+Alfred extension which converts between CSS RGB and HEX colors.
 
-## Getting Started
+## Prerequisites
 
-### Prerequisites
-
-For the installer to work you will need the following, else you will need to install it manually.
-
-* Python 3
-* Unix system 
-
-### Installation
-
-To install you just run:
-
-```
-$ cd build && ./installer.py --install
-```
-
-The default installation location is /usr/local/bin
-
-### Uninstallation
-
-To remove you just run:
-
-```
-$ cd build && ./installer.py --uninstall
-```
+To use this extension at least Java 8 is required.
 
 ## Usage
 
-### HEX to RGB
-
-To convert HEX code to RGB you run the following
+RGB to Hex
 
 ```
-$ color 123FAB
+# Output: #ffffff
+cssc rgb(255,255,255)
+cssc 255 255 255
+
+# Output: #ffffffff
+cssc rgba(255,255,255,255)
+cssc 255 255 255 255
 ```
 
-which will provide the output
+Hex to RGB
 
 ```
-18 63 171
+# Output: rgb(255,255,255)
+cssc ffffff
+cssc #ffffff
+
+# Output: rgba(255,255,255,255)
+cssc ffffffff
+cssc #ffffffff
 ```
 
-### RGB to HEX
+## Installation
 
-To convert RGB to HEX code you run the following
+Download the latest [release](https://github.com/JonasKop/CSSC/releases/download/1.0.0/CSSC.alfredworkflow) and double click on it to install.
 
-```
-$ color 18 63 171
-```
+## Build
 
-which will provide the output
+Building the extension is the easiest with Docker and bash.
 
 ```
-#123FAB
-```
-
-## Building
-
-To build this project by yourself you can do this. 
-
-### Prerequisites
-
-To build this project by your own you need the following:
-
-* Cabal build system
-* Haskell compiler
-
-### Build
-
-First build the program
-
-```
-$ cabal install
-```
-
-Then replace the executable in build/color with the one in dist/build/color/color
-
-```
-$ cp dist/build/color/color build/color
-```
-
-Then install it with 
-
-```
-$ cd build && ./installer.py --install
+./build.sh
 ```
